@@ -44,5 +44,11 @@ namespace QHStudyEnglish
         {
             SetToolTip_Init();
         }
+
+        private void cmbView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lsvMyVocaSet.View = (View)(cmbView.SelectedIndex);
+            lsvRecommendedVocaSet.View = (View)(cmbView.SelectedIndex);
+        }
     }
 }

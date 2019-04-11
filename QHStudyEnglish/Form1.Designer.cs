@@ -29,21 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabMain = new System.Windows.Forms.TabControl();
             this.tabVocaSet = new System.Windows.Forms.TabPage();
+            this.pnlQuickEditVocaSet = new System.Windows.Forms.Panel();
+            this.btnAddByRegex = new System.Windows.Forms.Button();
+            this.btnCamera = new System.Windows.Forms.Button();
+            this.btnOpenVocaSet = new System.Windows.Forms.Button();
+            this.pnlEditVocaset = new System.Windows.Forms.Panel();
+            this.btnEditVocaSet = new System.Windows.Forms.Button();
+            this.btnAddVocaSet = new System.Windows.Forms.Button();
+            this.btnRemoveVocaSet = new System.Windows.Forms.Button();
+            this.btnFoward = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.lsvRecommendedVocaSet = new System.Windows.Forms.ListView();
             this.recommended_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.recommended_mota = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imgList = new System.Windows.Forms.ImageList(this.components);
             this.lblRecommended = new System.Windows.Forms.Label();
-            this.btnOpenVocaSet = new System.Windows.Forms.Button();
-            this.btnEditVocaSet = new System.Windows.Forms.Button();
-            this.btnRemoveVocaSet = new System.Windows.Forms.Button();
-            this.btnAddVocaSet = new System.Windows.Forms.Button();
             this.lblView = new System.Windows.Forms.Label();
             this.cmbView = new System.Windows.Forms.ComboBox();
             this.lblMyVocaSet = new System.Windows.Forms.Label();
@@ -52,39 +56,33 @@
             this.vocaSet_name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.vocaSet_mota = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabVoca = new System.Windows.Forms.TabPage();
-            this.lblMain = new System.Windows.Forms.Label();
-            this.lblDescribeVocaSet = new System.Windows.Forms.DataGridView();
+            this.btnLearn = new System.Windows.Forms.Button();
+            this.btnPractice = new System.Windows.Forms.Button();
+            this.chkCheckAllVoca = new System.Windows.Forms.CheckBox();
+            this.grbVocaSet = new System.Windows.Forms.GroupBox();
+            this.txtDescribeVocaSet = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbVocaSetName = new System.Windows.Forms.ComboBox();
+            this.lblVocaSetName = new System.Windows.Forms.Label();
+            this.cmbMode_Vocaset = new System.Windows.Forms.ComboBox();
+            this.lblMode_VocaSet = new System.Windows.Forms.Label();
             this.lblVocaSet = new System.Windows.Forms.Label();
+            this.lblDescribeVocaSet = new System.Windows.Forms.DataGridView();
             this.dgv_voca_check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dgv_voca_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_meaning = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_voca_practiced = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_voca_ratio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgv_vocaSet_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblMode_VocaSet = new System.Windows.Forms.Label();
-            this.cmbMode_Vocaset = new System.Windows.Forms.ComboBox();
-            this.grbVocaSet = new System.Windows.Forms.GroupBox();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnFoward = new System.Windows.Forms.Button();
+            this.lblMain = new System.Windows.Forms.Label();
             this.tooltTip = new System.Windows.Forms.ToolTip(this.components);
-            this.pnlEditVocaset = new System.Windows.Forms.Panel();
-            this.pnlQuickEditVocaSet = new System.Windows.Forms.Panel();
-            this.btnCamera = new System.Windows.Forms.Button();
-            this.btnAddByRegex = new System.Windows.Forms.Button();
-            this.chkCheckAllVoca = new System.Windows.Forms.CheckBox();
-            this.lblVocaSetName = new System.Windows.Forms.Label();
-            this.cmbVocaSetName = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtDescribeVocaSet = new System.Windows.Forms.TextBox();
-            this.btnPractice = new System.Windows.Forms.Button();
-            this.btnLearn = new System.Windows.Forms.Button();
             this.tabMain.SuspendLayout();
             this.tabVocaSet.SuspendLayout();
-            this.tabVoca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lblDescribeVocaSet)).BeginInit();
-            this.grbVocaSet.SuspendLayout();
-            this.pnlEditVocaset.SuspendLayout();
             this.pnlQuickEditVocaSet.SuspendLayout();
+            this.pnlEditVocaset.SuspendLayout();
+            this.tabVoca.SuspendLayout();
+            this.grbVocaSet.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lblDescribeVocaSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tabMain
@@ -119,6 +117,124 @@
             this.tabVocaSet.Size = new System.Drawing.Size(976, 448);
             this.tabVocaSet.TabIndex = 0;
             this.tabVocaSet.Text = "Bộ từ vựng";
+            // 
+            // pnlQuickEditVocaSet
+            // 
+            this.pnlQuickEditVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlQuickEditVocaSet.Controls.Add(this.btnAddByRegex);
+            this.pnlQuickEditVocaSet.Controls.Add(this.btnCamera);
+            this.pnlQuickEditVocaSet.Controls.Add(this.btnOpenVocaSet);
+            this.pnlQuickEditVocaSet.Location = new System.Drawing.Point(668, 6);
+            this.pnlQuickEditVocaSet.Name = "pnlQuickEditVocaSet";
+            this.pnlQuickEditVocaSet.Size = new System.Drawing.Size(145, 57);
+            this.pnlQuickEditVocaSet.TabIndex = 13;
+            // 
+            // btnAddByRegex
+            // 
+            this.btnAddByRegex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddByRegex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddByRegex.BackgroundImage")));
+            this.btnAddByRegex.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddByRegex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddByRegex.Location = new System.Drawing.Point(4, 7);
+            this.btnAddByRegex.Name = "btnAddByRegex";
+            this.btnAddByRegex.Size = new System.Drawing.Size(42, 42);
+            this.btnAddByRegex.TabIndex = 15;
+            this.btnAddByRegex.UseVisualStyleBackColor = true;
+            // 
+            // btnCamera
+            // 
+            this.btnCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCamera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCamera.BackgroundImage")));
+            this.btnCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCamera.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCamera.Location = new System.Drawing.Point(52, 7);
+            this.btnCamera.Name = "btnCamera";
+            this.btnCamera.Size = new System.Drawing.Size(42, 42);
+            this.btnCamera.TabIndex = 14;
+            this.btnCamera.UseVisualStyleBackColor = true;
+            // 
+            // btnOpenVocaSet
+            // 
+            this.btnOpenVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenVocaSet.BackgroundImage")));
+            this.btnOpenVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnOpenVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnOpenVocaSet.Location = new System.Drawing.Point(100, 7);
+            this.btnOpenVocaSet.Name = "btnOpenVocaSet";
+            this.btnOpenVocaSet.Size = new System.Drawing.Size(42, 42);
+            this.btnOpenVocaSet.TabIndex = 7;
+            this.btnOpenVocaSet.UseVisualStyleBackColor = true;
+            // 
+            // pnlEditVocaset
+            // 
+            this.pnlEditVocaset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlEditVocaset.Controls.Add(this.btnEditVocaSet);
+            this.pnlEditVocaset.Controls.Add(this.btnAddVocaSet);
+            this.pnlEditVocaset.Controls.Add(this.btnRemoveVocaSet);
+            this.pnlEditVocaset.Location = new System.Drawing.Point(816, 6);
+            this.pnlEditVocaset.Name = "pnlEditVocaset";
+            this.pnlEditVocaset.Size = new System.Drawing.Size(152, 57);
+            this.pnlEditVocaset.TabIndex = 12;
+            // 
+            // btnEditVocaSet
+            // 
+            this.btnEditVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditVocaSet.BackgroundImage")));
+            this.btnEditVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditVocaSet.Location = new System.Drawing.Point(99, 7);
+            this.btnEditVocaSet.Name = "btnEditVocaSet";
+            this.btnEditVocaSet.Size = new System.Drawing.Size(42, 42);
+            this.btnEditVocaSet.TabIndex = 6;
+            this.btnEditVocaSet.UseVisualStyleBackColor = true;
+            // 
+            // btnAddVocaSet
+            // 
+            this.btnAddVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddVocaSet.BackgroundImage")));
+            this.btnAddVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAddVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddVocaSet.Location = new System.Drawing.Point(3, 7);
+            this.btnAddVocaSet.Name = "btnAddVocaSet";
+            this.btnAddVocaSet.Size = new System.Drawing.Size(42, 42);
+            this.btnAddVocaSet.TabIndex = 4;
+            this.btnAddVocaSet.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveVocaSet
+            // 
+            this.btnRemoveVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRemoveVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveVocaSet.BackgroundImage")));
+            this.btnRemoveVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRemoveVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveVocaSet.Location = new System.Drawing.Point(51, 7);
+            this.btnRemoveVocaSet.Name = "btnRemoveVocaSet";
+            this.btnRemoveVocaSet.Size = new System.Drawing.Size(42, 42);
+            this.btnRemoveVocaSet.TabIndex = 5;
+            this.btnRemoveVocaSet.UseVisualStyleBackColor = true;
+            // 
+            // btnFoward
+            // 
+            this.btnFoward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFoward.BackgroundImage")));
+            this.btnFoward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFoward.FlatAppearance.BorderSize = 0;
+            this.btnFoward.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFoward.Location = new System.Drawing.Point(51, 40);
+            this.btnFoward.Name = "btnFoward";
+            this.btnFoward.Size = new System.Drawing.Size(35, 35);
+            this.btnFoward.TabIndex = 11;
+            this.btnFoward.UseVisualStyleBackColor = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBack.Location = new System.Drawing.Point(10, 40);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(35, 35);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.UseVisualStyleBackColor = true;
             // 
             // lsvRecommendedVocaSet
             // 
@@ -166,54 +282,6 @@
             this.lblRecommended.Text = "Bộ từ đề xuất";
             this.lblRecommended.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnOpenVocaSet
-            // 
-            this.btnOpenVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOpenVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnOpenVocaSet.BackgroundImage")));
-            this.btnOpenVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOpenVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOpenVocaSet.Location = new System.Drawing.Point(100, 7);
-            this.btnOpenVocaSet.Name = "btnOpenVocaSet";
-            this.btnOpenVocaSet.Size = new System.Drawing.Size(42, 42);
-            this.btnOpenVocaSet.TabIndex = 7;
-            this.btnOpenVocaSet.UseVisualStyleBackColor = true;
-            // 
-            // btnEditVocaSet
-            // 
-            this.btnEditVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditVocaSet.BackgroundImage")));
-            this.btnEditVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEditVocaSet.Location = new System.Drawing.Point(99, 7);
-            this.btnEditVocaSet.Name = "btnEditVocaSet";
-            this.btnEditVocaSet.Size = new System.Drawing.Size(42, 42);
-            this.btnEditVocaSet.TabIndex = 6;
-            this.btnEditVocaSet.UseVisualStyleBackColor = true;
-            // 
-            // btnRemoveVocaSet
-            // 
-            this.btnRemoveVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveVocaSet.BackgroundImage")));
-            this.btnRemoveVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRemoveVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRemoveVocaSet.Location = new System.Drawing.Point(51, 7);
-            this.btnRemoveVocaSet.Name = "btnRemoveVocaSet";
-            this.btnRemoveVocaSet.Size = new System.Drawing.Size(42, 42);
-            this.btnRemoveVocaSet.TabIndex = 5;
-            this.btnRemoveVocaSet.UseVisualStyleBackColor = true;
-            // 
-            // btnAddVocaSet
-            // 
-            this.btnAddVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddVocaSet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddVocaSet.BackgroundImage")));
-            this.btnAddVocaSet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddVocaSet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddVocaSet.Location = new System.Drawing.Point(3, 7);
-            this.btnAddVocaSet.Name = "btnAddVocaSet";
-            this.btnAddVocaSet.Size = new System.Drawing.Size(42, 42);
-            this.btnAddVocaSet.TabIndex = 4;
-            this.btnAddVocaSet.UseVisualStyleBackColor = true;
-            // 
             // lblView
             // 
             this.lblView.AutoSize = true;
@@ -229,15 +297,16 @@
             this.cmbView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbView.FormattingEnabled = true;
             this.cmbView.Items.AddRange(new object[] {
-            "Details",
             "Large Icon",
-            "List",
+            "Details",
             "Small Icon",
+            "List",
             "Tile"});
             this.cmbView.Location = new System.Drawing.Point(71, 9);
             this.cmbView.Name = "cmbView";
             this.cmbView.Size = new System.Drawing.Size(121, 27);
             this.cmbView.TabIndex = 2;
+            this.cmbView.SelectedIndexChanged += new System.EventHandler(this.cmbView_SelectedIndexChanged);
             // 
             // lblMyVocaSet
             // 
@@ -304,67 +373,115 @@
             this.tabVoca.TabIndex = 1;
             this.tabVoca.Text = "Từ vựng";
             // 
-            // lblMain
+            // btnLearn
             // 
-            this.lblMain.AllowDrop = true;
-            this.lblMain.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblMain.AutoEllipsis = true;
-            this.lblMain.AutoSize = true;
-            this.lblMain.Enabled = false;
-            this.lblMain.Font = new System.Drawing.Font("Lato Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMain.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblMain.Location = new System.Drawing.Point(348, 18);
-            this.lblMain.Name = "lblMain";
-            this.lblMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblMain.Size = new System.Drawing.Size(270, 39);
-            this.lblMain.TabIndex = 1;
-            this.lblMain.Text = "QH Study English";
-            this.lblMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLearn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLearn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLearn.BackgroundImage")));
+            this.btnLearn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLearn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLearn.Location = new System.Drawing.Point(475, 95);
+            this.btnLearn.Name = "btnLearn";
+            this.btnLearn.Size = new System.Drawing.Size(42, 42);
+            this.btnLearn.TabIndex = 16;
+            this.btnLearn.UseVisualStyleBackColor = true;
             // 
-            // lblDescribeVocaSet
+            // btnPractice
             // 
-            this.lblDescribeVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnPractice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPractice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPractice.BackgroundImage")));
+            this.btnPractice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPractice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPractice.Location = new System.Drawing.Point(523, 95);
+            this.btnPractice.Name = "btnPractice";
+            this.btnPractice.Size = new System.Drawing.Size(42, 42);
+            this.btnPractice.TabIndex = 15;
+            this.btnPractice.UseVisualStyleBackColor = true;
+            // 
+            // chkCheckAllVoca
+            // 
+            this.chkCheckAllVoca.AutoSize = true;
+            this.chkCheckAllVoca.Location = new System.Drawing.Point(91, 158);
+            this.chkCheckAllVoca.Name = "chkCheckAllVoca";
+            this.chkCheckAllVoca.Size = new System.Drawing.Size(15, 14);
+            this.chkCheckAllVoca.TabIndex = 5;
+            this.chkCheckAllVoca.UseVisualStyleBackColor = true;
+            // 
+            // grbVocaSet
+            // 
+            this.grbVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbVocaSet.Controls.Add(this.txtDescribeVocaSet);
+            this.grbVocaSet.Controls.Add(this.label1);
+            this.grbVocaSet.Controls.Add(this.cmbVocaSetName);
+            this.grbVocaSet.Controls.Add(this.lblVocaSetName);
+            this.grbVocaSet.Location = new System.Drawing.Point(571, 6);
+            this.grbVocaSet.Name = "grbVocaSet";
+            this.grbVocaSet.Size = new System.Drawing.Size(397, 137);
+            this.grbVocaSet.TabIndex = 4;
+            this.grbVocaSet.TabStop = false;
+            this.grbVocaSet.Text = "Bộ từ";
+            // 
+            // txtDescribeVocaSet
+            // 
+            this.txtDescribeVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescribeVocaSet.BackgroundColor = System.Drawing.Color.LightGreen;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.lblDescribeVocaSet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.lblDescribeVocaSet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lblDescribeVocaSet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgv_voca_check,
-            this.dgv_voca_name,
-            this.dgv_meaning,
-            this.dgv_voca_practiced,
-            this.dgv_voca_ratio,
-            this.dgv_vocaSet_id});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.lblDescribeVocaSet.DefaultCellStyle = dataGridViewCellStyle5;
-            this.lblDescribeVocaSet.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.lblDescribeVocaSet.Location = new System.Drawing.Point(6, 149);
-            this.lblDescribeVocaSet.Name = "lblDescribeVocaSet";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.lblDescribeVocaSet.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.lblDescribeVocaSet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
-            this.lblDescribeVocaSet.Size = new System.Drawing.Size(962, 291);
-            this.lblDescribeVocaSet.TabIndex = 0;
+            this.txtDescribeVocaSet.Location = new System.Drawing.Point(70, 53);
+            this.txtDescribeVocaSet.Multiline = true;
+            this.txtDescribeVocaSet.Name = "txtDescribeVocaSet";
+            this.txtDescribeVocaSet.Size = new System.Drawing.Size(321, 78);
+            this.txtDescribeVocaSet.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Mô tả:";
+            // 
+            // cmbVocaSetName
+            // 
+            this.cmbVocaSetName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbVocaSetName.FormattingEnabled = true;
+            this.cmbVocaSetName.Location = new System.Drawing.Point(70, 20);
+            this.cmbVocaSetName.Name = "cmbVocaSetName";
+            this.cmbVocaSetName.Size = new System.Drawing.Size(321, 27);
+            this.cmbVocaSetName.TabIndex = 1;
+            // 
+            // lblVocaSetName
+            // 
+            this.lblVocaSetName.AutoSize = true;
+            this.lblVocaSetName.Location = new System.Drawing.Point(6, 23);
+            this.lblVocaSetName.Name = "lblVocaSetName";
+            this.lblVocaSetName.Size = new System.Drawing.Size(58, 19);
+            this.lblVocaSetName.TabIndex = 0;
+            this.lblVocaSetName.Text = "Tên bộ:";
+            // 
+            // cmbMode_Vocaset
+            // 
+            this.cmbMode_Vocaset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMode_Vocaset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMode_Vocaset.FormattingEnabled = true;
+            this.cmbMode_Vocaset.Items.AddRange(new object[] {
+            "Từ vựng trong bộ từ này",
+            "Từ vựng trong bộ từ này và bộ từ con"});
+            this.cmbMode_Vocaset.Location = new System.Drawing.Point(64, 6);
+            this.cmbMode_Vocaset.Name = "cmbMode_Vocaset";
+            this.cmbMode_Vocaset.Size = new System.Drawing.Size(239, 27);
+            this.cmbMode_Vocaset.TabIndex = 3;
+            // 
+            // lblMode_VocaSet
+            // 
+            this.lblMode_VocaSet.AutoSize = true;
+            this.lblMode_VocaSet.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMode_VocaSet.Location = new System.Drawing.Point(7, 9);
+            this.lblMode_VocaSet.Name = "lblMode_VocaSet";
+            this.lblMode_VocaSet.Size = new System.Drawing.Size(61, 19);
+            this.lblMode_VocaSet.TabIndex = 2;
+            this.lblMode_VocaSet.Text = "Chế độ: ";
             // 
             // lblVocaSet
             // 
@@ -376,6 +493,35 @@
             this.lblVocaSet.Size = new System.Drawing.Size(188, 33);
             this.lblVocaSet.TabIndex = 1;
             this.lblVocaSet.Text = "Tên bộ từ vựng\r";
+            // 
+            // lblDescribeVocaSet
+            // 
+            this.lblDescribeVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDescribeVocaSet.BackgroundColor = System.Drawing.Color.LightGreen;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Lato", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.lblDescribeVocaSet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.lblDescribeVocaSet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lblDescribeVocaSet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_voca_check,
+            this.dgv_voca_name,
+            this.dgv_meaning,
+            this.dgv_voca_practiced,
+            this.dgv_voca_ratio,
+            this.dgv_vocaSet_id});
+            this.lblDescribeVocaSet.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblDescribeVocaSet.Location = new System.Drawing.Point(6, 149);
+            this.lblDescribeVocaSet.Name = "lblDescribeVocaSet";
+            this.lblDescribeVocaSet.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.lblDescribeVocaSet.Size = new System.Drawing.Size(962, 291);
+            this.lblDescribeVocaSet.TabIndex = 0;
             // 
             // dgv_voca_check
             // 
@@ -414,185 +560,22 @@
             this.dgv_vocaSet_id.Name = "dgv_vocaSet_id";
             this.dgv_vocaSet_id.Visible = false;
             // 
-            // lblMode_VocaSet
+            // lblMain
             // 
-            this.lblMode_VocaSet.AutoSize = true;
-            this.lblMode_VocaSet.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMode_VocaSet.Location = new System.Drawing.Point(7, 9);
-            this.lblMode_VocaSet.Name = "lblMode_VocaSet";
-            this.lblMode_VocaSet.Size = new System.Drawing.Size(61, 19);
-            this.lblMode_VocaSet.TabIndex = 2;
-            this.lblMode_VocaSet.Text = "Chế độ: ";
-            // 
-            // cmbMode_Vocaset
-            // 
-            this.cmbMode_Vocaset.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMode_Vocaset.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMode_Vocaset.FormattingEnabled = true;
-            this.cmbMode_Vocaset.Items.AddRange(new object[] {
-            "Từ vựng trong bộ từ này",
-            "Từ vựng trong bộ từ này và bộ từ con"});
-            this.cmbMode_Vocaset.Location = new System.Drawing.Point(64, 6);
-            this.cmbMode_Vocaset.Name = "cmbMode_Vocaset";
-            this.cmbMode_Vocaset.Size = new System.Drawing.Size(239, 27);
-            this.cmbMode_Vocaset.TabIndex = 3;
-            // 
-            // grbVocaSet
-            // 
-            this.grbVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.grbVocaSet.Controls.Add(this.txtDescribeVocaSet);
-            this.grbVocaSet.Controls.Add(this.label1);
-            this.grbVocaSet.Controls.Add(this.cmbVocaSetName);
-            this.grbVocaSet.Controls.Add(this.lblVocaSetName);
-            this.grbVocaSet.Location = new System.Drawing.Point(571, 6);
-            this.grbVocaSet.Name = "grbVocaSet";
-            this.grbVocaSet.Size = new System.Drawing.Size(397, 137);
-            this.grbVocaSet.TabIndex = 4;
-            this.grbVocaSet.TabStop = false;
-            this.grbVocaSet.Text = "Bộ từ";
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBack.Location = new System.Drawing.Point(10, 40);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(35, 35);
-            this.btnBack.TabIndex = 10;
-            this.btnBack.UseVisualStyleBackColor = true;
-            // 
-            // btnFoward
-            // 
-            this.btnFoward.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFoward.BackgroundImage")));
-            this.btnFoward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFoward.FlatAppearance.BorderSize = 0;
-            this.btnFoward.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFoward.Location = new System.Drawing.Point(51, 40);
-            this.btnFoward.Name = "btnFoward";
-            this.btnFoward.Size = new System.Drawing.Size(35, 35);
-            this.btnFoward.TabIndex = 11;
-            this.btnFoward.UseVisualStyleBackColor = true;
-            // 
-            // pnlEditVocaset
-            // 
-            this.pnlEditVocaset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlEditVocaset.Controls.Add(this.btnEditVocaSet);
-            this.pnlEditVocaset.Controls.Add(this.btnAddVocaSet);
-            this.pnlEditVocaset.Controls.Add(this.btnRemoveVocaSet);
-            this.pnlEditVocaset.Location = new System.Drawing.Point(816, 6);
-            this.pnlEditVocaset.Name = "pnlEditVocaset";
-            this.pnlEditVocaset.Size = new System.Drawing.Size(152, 57);
-            this.pnlEditVocaset.TabIndex = 12;
-            // 
-            // pnlQuickEditVocaSet
-            // 
-            this.pnlQuickEditVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlQuickEditVocaSet.Controls.Add(this.btnAddByRegex);
-            this.pnlQuickEditVocaSet.Controls.Add(this.btnCamera);
-            this.pnlQuickEditVocaSet.Controls.Add(this.btnOpenVocaSet);
-            this.pnlQuickEditVocaSet.Location = new System.Drawing.Point(668, 6);
-            this.pnlQuickEditVocaSet.Name = "pnlQuickEditVocaSet";
-            this.pnlQuickEditVocaSet.Size = new System.Drawing.Size(145, 57);
-            this.pnlQuickEditVocaSet.TabIndex = 13;
-            // 
-            // btnCamera
-            // 
-            this.btnCamera.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCamera.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCamera.BackgroundImage")));
-            this.btnCamera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCamera.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCamera.Location = new System.Drawing.Point(52, 7);
-            this.btnCamera.Name = "btnCamera";
-            this.btnCamera.Size = new System.Drawing.Size(42, 42);
-            this.btnCamera.TabIndex = 14;
-            this.btnCamera.UseVisualStyleBackColor = true;
-            // 
-            // btnAddByRegex
-            // 
-            this.btnAddByRegex.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddByRegex.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddByRegex.BackgroundImage")));
-            this.btnAddByRegex.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAddByRegex.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddByRegex.Location = new System.Drawing.Point(4, 7);
-            this.btnAddByRegex.Name = "btnAddByRegex";
-            this.btnAddByRegex.Size = new System.Drawing.Size(42, 42);
-            this.btnAddByRegex.TabIndex = 15;
-            this.btnAddByRegex.UseVisualStyleBackColor = true;
-            // 
-            // chkCheckAllVoca
-            // 
-            this.chkCheckAllVoca.AutoSize = true;
-            this.chkCheckAllVoca.Location = new System.Drawing.Point(91, 158);
-            this.chkCheckAllVoca.Name = "chkCheckAllVoca";
-            this.chkCheckAllVoca.Size = new System.Drawing.Size(15, 14);
-            this.chkCheckAllVoca.TabIndex = 5;
-            this.chkCheckAllVoca.UseVisualStyleBackColor = true;
-            // 
-            // lblVocaSetName
-            // 
-            this.lblVocaSetName.AutoSize = true;
-            this.lblVocaSetName.Location = new System.Drawing.Point(6, 23);
-            this.lblVocaSetName.Name = "lblVocaSetName";
-            this.lblVocaSetName.Size = new System.Drawing.Size(58, 19);
-            this.lblVocaSetName.TabIndex = 0;
-            this.lblVocaSetName.Text = "Tên bộ:";
-            // 
-            // cmbVocaSetName
-            // 
-            this.cmbVocaSetName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbVocaSetName.FormattingEnabled = true;
-            this.cmbVocaSetName.Location = new System.Drawing.Point(70, 20);
-            this.cmbVocaSetName.Name = "cmbVocaSetName";
-            this.cmbVocaSetName.Size = new System.Drawing.Size(321, 27);
-            this.cmbVocaSetName.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 19);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Mô tả:";
-            // 
-            // txtDescribeVocaSet
-            // 
-            this.txtDescribeVocaSet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDescribeVocaSet.Location = new System.Drawing.Point(70, 53);
-            this.txtDescribeVocaSet.Multiline = true;
-            this.txtDescribeVocaSet.Name = "txtDescribeVocaSet";
-            this.txtDescribeVocaSet.Size = new System.Drawing.Size(321, 78);
-            this.txtDescribeVocaSet.TabIndex = 3;
-            // 
-            // btnPractice
-            // 
-            this.btnPractice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPractice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPractice.BackgroundImage")));
-            this.btnPractice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPractice.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPractice.Location = new System.Drawing.Point(523, 95);
-            this.btnPractice.Name = "btnPractice";
-            this.btnPractice.Size = new System.Drawing.Size(42, 42);
-            this.btnPractice.TabIndex = 15;
-            this.btnPractice.UseVisualStyleBackColor = true;
-            // 
-            // btnLearn
-            // 
-            this.btnLearn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLearn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLearn.BackgroundImage")));
-            this.btnLearn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLearn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLearn.Location = new System.Drawing.Point(475, 95);
-            this.btnLearn.Name = "btnLearn";
-            this.btnLearn.Size = new System.Drawing.Size(42, 42);
-            this.btnLearn.TabIndex = 16;
-            this.btnLearn.UseVisualStyleBackColor = true;
+            this.lblMain.AllowDrop = true;
+            this.lblMain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblMain.AutoEllipsis = true;
+            this.lblMain.AutoSize = true;
+            this.lblMain.Enabled = false;
+            this.lblMain.Font = new System.Drawing.Font("Lato Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMain.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblMain.Location = new System.Drawing.Point(348, 18);
+            this.lblMain.Name = "lblMain";
+            this.lblMain.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lblMain.Size = new System.Drawing.Size(270, 39);
+            this.lblMain.TabIndex = 1;
+            this.lblMain.Text = "QH Study English";
+            this.lblMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 
@@ -612,13 +595,13 @@
             this.tabMain.ResumeLayout(false);
             this.tabVocaSet.ResumeLayout(false);
             this.tabVocaSet.PerformLayout();
+            this.pnlQuickEditVocaSet.ResumeLayout(false);
+            this.pnlEditVocaset.ResumeLayout(false);
             this.tabVoca.ResumeLayout(false);
             this.tabVoca.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lblDescribeVocaSet)).EndInit();
             this.grbVocaSet.ResumeLayout(false);
             this.grbVocaSet.PerformLayout();
-            this.pnlEditVocaset.ResumeLayout(false);
-            this.pnlQuickEditVocaSet.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lblDescribeVocaSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
